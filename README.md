@@ -1,3 +1,32 @@
+General
+- [Ranged Attack](#ranged-attack)
+- [Weapon Swap](#weapon-swap)
+- [Mouseover Use Helm](#mouseover-use-helm)
+
+Skills
+- [Toggle Cleave](#toggle-cleave)
+- [Toggle Heroic Strike](#toggle-heroic-strike)
+- [Interrupt](#interrupt)
+- [Taunt](#taunt)
+- [Mocking Blow](#mocking-blow)
+- [Charge](#charge)
+- [Intercept](#intercept)
+- [Rend](#rend)
+- [Hamstring](#hamstring)
+- [Disarm](#disarm)
+- [Execute](#execute)
+- [Overpower + Revenge](#overpower-+-revenge)
+- [Shield Block](#shield-block)
+- [Recklessness](#recklessness)
+- [Shield Wall](#shield-wall)
+- [Retaliation](#retaliation)
+- [Berserker Rage](#berserker-rage)
+- [Whirlwind](#whirlwind)
+- [Sweeping Strikes](#sweeping-strikes)
+- [Mouseover Intimidating Shout](#mouseover-intimidating-shout)
+
+
+
 # Charge
 
 ### Description
@@ -396,7 +425,7 @@ Turn Heroic Strike on or off for the next main-hand swing.
 /stopcasting
 ```
 
-# Mouse-Over Use Helm
+# Mouseover Use Helm
 
 ### Description
 
@@ -411,7 +440,7 @@ Use your equipped helm on your target or mouse-over target. Prioritizes the mous
 /use [@mouseover, harm, nodead] [ ] 1
 ```
 
-# Mouse-Over Intimidating Shout
+# Mouseover Intimidating Shout
 
 ### Description
 
@@ -424,7 +453,7 @@ Use your Intimidating Shout on your target or mouse-over target. Prioritizes the
 /cast [@mouseover, exists, nodead][] Intimidating Shout
 ```
 
-# Toggle Weapons
+# Weapon Swap
 
 ### Description
 
