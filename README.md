@@ -1,3 +1,5 @@
+# List of Macros
+
 General
 - [Ranged Attack](#ranged-attack)
 - [Weapon Swap](#weapon-swap)
