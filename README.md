@@ -1,11 +1,9 @@
-# List of Macros
-
-General
+## General
 - [Ranged Attack](#ranged-attack)
 - [Weapon Swap](#weapon-swap)
 - [Mouseover Use Helm](#mouseover-use-helm)
 
-Skills
+## Skills
 - [Toggle Cleave](#toggle-cleave)
 - [Toggle Heroic Strike](#toggle-heroic-strike)
 - [Interrupt](#interrupt)
