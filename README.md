@@ -236,7 +236,7 @@ else:
 ```
 #showtooltip
 /stopcasting
-/use [@mouseover,harm,stance:3][stance:3] Pummel; [noequipped:Shields] Berserker Stance; [@mouseover,harm][] Shield Bash
+/use [@mouseover, harm, nodead, stance:3][stance:3] Pummel; [noequipped:Shields] Berserker Stance; [@mouseover, harm, nodead][] Shield Bash
 /startattack
 ```
 
@@ -439,8 +439,6 @@ Use your equipped helm on your target or mouse-over target. Prioritizes the mous
 
 ```
 #showtooltip 1
-/tar [@target, harm, nodead] [@mouseover, harm, nodead]
-/stopmacro [@target, dead] [@target, noexists]
 /use [@mouseover, harm, nodead] [ ] 1
 ```
 
