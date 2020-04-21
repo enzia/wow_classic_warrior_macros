@@ -220,7 +220,7 @@ cast shield block
 
 ### Description
 
-Casts Pummel if you are in Berserker Stance. If a shield is not equipped, casts Berserker Stance. Otherwise, casts Shield Bash instead.
+Casts Pummel on the target or mouseover target if you are in Berserker Stance. If a shield is not equipped, casts Berserker Stance. Otherwise, casts Shield Bash instead. Prioritizes the mouseover target.
 
 ```
 if stance is berserker:
@@ -433,20 +433,20 @@ Turn Heroic Strike on or off for the next main-hand swing.
 
 ### Description
 
-Use your equipped helm on your target or mouse-over target. Prioritizes the mouse-over target.
+Use your equipped helm on your target or mouse-over target. Prioritizes the mouseover target.
 
 ### Macro
 
 ```
 #showtooltip 1
-/use [@mouseover, harm, nodead] [ ] 1
+/use [@mouseover, harm, nodead][] 1
 ```
 
 # Mouseover Intimidating Shout
 
 ### Description
 
-Use your Intimidating Shout on your target or mouse-over target. Prioritizes the mouse-over target.
+Use your Intimidating Shout on your target or mouse-over target. Prioritizes the mouseover target.
 
 ### Macro
 
