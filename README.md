@@ -6,7 +6,7 @@
 ## Skills
 - [Toggle Cleave](#toggle-cleave)
 - [Toggle Heroic Strike](#toggle-heroic-strike)
-- [Interrupt](#interrupt)
+- [Mouseover Interrupt](#mouseover-interrupt)
 - [Taunt](#taunt)
 - [Mocking Blow](#mocking-blow)
 - [Charge](#charge)
@@ -216,24 +216,28 @@ cast shield block
 /startattack
 ```
 
-# Interrupt
+# Mouseover Interrupt
 
 ### Description
 
-Casts Pummel. If a shield is equipped and you are not in Berserker Stance, casts Shield Bash instead.
+Casts Pummel if you are in Berserker Stance. If a shield is not equipped, casts Berserker Stance. Otherwise, casts Shield Bash instead.
 
 ```
-if shield is equipped and stance is not berserker:
-    cast shield bash
-else:
+if stance is berserker:
     cast pummel
+else if shield is not equipped:
+    cast berserker stance
+else:
+    cast shield bash
 ```
 
 ### Macro
 
 ```
 #showtooltip
-/cast [equipped:Shield, nostance:3] Shield Bash; Pummel
+/stopcasting
+/use [@mouseover,harm,stance:3][stance:3] Pummel; [noequipped:Shields] Berserker Stance; [@mouseover,harm][] Shield Bash
+/startattack
 ```
 
 
