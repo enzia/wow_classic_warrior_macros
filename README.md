@@ -1,9 +1,7 @@
-## General
+## Macros
 - [Ranged Attack](###ranged-attack)
 - [Weapon Swap](###weapon-swap)
 - [Mouseover Use Helm](###mouseover-use-helm)
-
-## Skills
 - [Toggle Cleave](###toggle-cleave)
 - [Toggle Heroic Strike](###toggle-heroic-strike)
 - [Mouseover Interrupt](###mouseover-interrupt)
@@ -97,7 +95,7 @@ Casts Pummel on the target or mouseover target if you are in Berserker Stance. I
 
 ### Mouseover Intimidating Shout
 
-Use your Intimidating Shout on your target or mouseover target. Prioritizes the mouseover target.
+Use your Intimidating Shout on your target or mouseover target. Prioritizes the mouseover target. Useful if there is a target close to your main target so you can catch your main target in a fear that will not break on damage.
 
 ```
 #show Intimidating Shout
