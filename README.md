@@ -1,50 +1,42 @@
 ## General
-- [Ranged Attack](#ranged-attack)
-- [Weapon Swap](#weapon-swap)
-- [Mouseover Use Helm](#mouseover-use-helm)
+- [Ranged Attack](###ranged-attack)
+- [Weapon Swap](###weapon-swap)
+- [Mouseover Use Helm](###mouseover-use-helm)
 
 ## Skills
-- [Toggle Cleave](#toggle-cleave)
-- [Toggle Heroic Strike](#toggle-heroic-strike)
-- [Mouseover Interrupt](#mouseover-interrupt)
-- [Mouseover Intimidating Shout](#mouseover-intimidating-shout)
-- [Taunt](#taunt)
-- [Mocking Blow](#mocking-blow)
-- [Charge](#charge)
-- [Intercept](#intercept)
-- [Rend](#rend)
-- [Hamstring](#hamstring)
-- [Disarm](#disarm)
-- [Execute](#execute)
-- [Overpower + Revenge](#overpower-+-revenge)
-- [Shield Block](#shield-block)
-- [Recklessness](#recklessness)
-- [Shield Wall](#shield-wall)
-- [Retaliation](#retaliation)
-- [Berserker Rage](#berserker-rage)
-- [Whirlwind](#whirlwind)
-- [Sweeping Strikes](#sweeping-strikes)
+- [Toggle Cleave](###toggle-cleave)
+- [Toggle Heroic Strike](###toggle-heroic-strike)
+- [Mouseover Interrupt](###mouseover-interrupt)
+- [Mouseover Intimidating Shout](###mouseover-intimidating-shout)
+- [Taunt](###taunt)
+- [Mocking Blow](###mocking-blow)
+- [Charge](###charge)
+- [Intercept](###intercept)
+- [Rend](###rend)
+- [Hamstring](###hamstring)
+- [Disarm](###disarm)
+- [Execute](###execute)
+- [Overpower + Revenge](###overpower-+-revenge)
+- [Shield Block](###shield-block)
+- [Recklessness](###recklessness)
+- [Shield Wall](###shield-wall)
+- [Retaliation](###retaliation)
+- [Berserker Rage](###berserker-rage)
+- [Whirlwind](###whirlwind)
+- [Sweeping Strikes](###sweeping-strikes)
 
-# Ranged Attack
-
-### Description
+### Ranged Attack
 
 Uses the appropriate spell to attack with your equipped ranged weapon.
-
-### Macro
 
 ```
 /cast [equipped:Bow] Shoot Bow; [equipped:Crossbow] Shoot Crossbow; [equipped:Gun] Shoot Gun; [equipped:Thrown] Throw;
 /startattack
 ```
 
-# Weapon Swap
-
-### Description
+### Weapon Swap
 
 Switches between two sets of weapons.
-
-### Macro
 
 ```
 #showtooltip 16
@@ -61,26 +53,18 @@ Switches between two sets of weapons.
 /equipslot 17 <OFF #2>
 ```
 
-# Mouseover Use Helm
-
-### Description
+### Mouseover Use Helm
 
 Use your equipped helm on your target or mouseover target. Prioritizes the mouseover target. Nice for Goblin Rocket Helmet.
-
-### Macro
 
 ```
 #showtooltip 1
 /use [@mouseover, harm, nodead][] 1
 ```
 
-# Toggle Cleave
-
-### Description
+### Toggle Cleave
 
 Turn Cleave on or off for the next main-hand swing.
-
-### Macro
 
 ```
 #show Cleave
@@ -89,13 +73,9 @@ Turn Cleave on or off for the next main-hand swing.
 /stopcasting
 ```
 
-# Toggle Heroic Strike
-
-### Description
+### Toggle Heroic Strike
 
 Turn Heroic Strike on or off for the next main-hand swing.
-
-### Macro
 
 ```
 #show Heroic Strike
@@ -104,13 +84,9 @@ Turn Heroic Strike on or off for the next main-hand swing.
 /stopcasting
 ```
 
-# Mouseover Interrupt
-
-### Description
+### Mouseover Interrupt
 
 Casts Pummel on the target or mouseover target if you are in Berserker Stance. If a shield is not equipped, casts Berserker Stance. Otherwise, casts Shield Bash instead. Prioritizes the mouseover target.
-
-### Macro
 
 ```
 #showtooltip
@@ -119,129 +95,89 @@ Casts Pummel on the target or mouseover target if you are in Berserker Stance. I
 /startattack
 ```
 
-# Mouseover Intimidating Shout
-
-### Description
+### Mouseover Intimidating Shout
 
 Use your Intimidating Shout on your target or mouseover target. Prioritizes the mouseover target.
-
-### Macro
 
 ```
 #show Intimidating Shout
 /cast [@mouseover, exists, nodead][] Intimidating Shout
 ```
 
-# Taunt
-
-### Description
+### Taunt
 
 Casts Defensive Stance if you are not in Defensive Stance. Otherwise, casts Taunt.
-
-### Macro
 
 ```
 #show Taunt
 /cast [nostance:2] Defensive Stance; Taunt
 ```
 
-# Mocking Blow
-
-### Description
+### Mocking Blow
 
 Casts Battle Stance if you are not in Battle Stance. Otherwise, casts Mocking Blow.
-
-### Macro
 
 ```
 #show Mocking Blow
 /cast [nostance:1] Battle Stance; Mocking Blow
 ```
 
-# Charge
-
-### Description
+### Charge
 
 Casts Battle Stance if you are not in Battle Stance. Otherwise, casts Charge.
-
-### Macro
 
 ```
 #show Charge
 /cast [nostance:1] Battle Stance; Charge
 ```
 
-# Rend
-
-### Description
+### Rend
 
 Casts Battle Stance if you are in Berserker Stance. Otherwise, casts Rend.
-
-### Macro
 
 ```
 #show Rend
 /cast [stance:3] Battle Stance; Rend
 ```
 
-# Hamstring
-
-### Description
+### Hamstring
 
 Casts Battle Stance if you are in Defensive Stance. Otherwise, casts Hamstring.
-
-### Macro
 
 ```
 #show Hamstring
 /cast [stance:2] Battle Stance; Hamstring
 ```
 
-# Disarm
-
-### Description
+### Disarm
 
 Casts Defensive Stance if you are not in Defensive Stance. Otherwise, casts Disarm.
-
-### Macro
 
 ```
 #show Disarm
 /cast [nostance:2] Defensive Stance; Disarm
 ```
 
-# Execute
-
-### Description
+### Execute
 
 Casts Battle Stance if you are in Defensive Stance. Otherwise, casts Execute.
-
-### Macro
 
 ```
 #show Execute
 /cast [stance:2] Battle Stance; Execute
 ```
 
-# Overpower + Revenge
-
-### Description
+### Overpower + Revenge
 
 Casts Overpower if you are in Battle Stance or Revenge if you are in Defensive Stance.
-
-### Macro
 
 ```
 /cast [stance:1] Overpower; [stance:2] Revenge
 ```
 
-# Shield Block
-
-### Description
+### Shield Block
 
 Equips a one-handed weapon and shield. Casts Defensive Stance if you are not in Defensive Stance. Otherwise, casts Shield Block.
-
-### Macro
 
 ```
 #show Shield Block
@@ -251,13 +187,9 @@ Equips a one-handed weapon and shield. Casts Defensive Stance if you are not in 
 /startattack
 ```
 
-# Recklessness
-
-### Description
+### Recklessness
 
 Casts Berserker Stance if you are not in Berserker Stance. Otherwise, casts Recklessness.
-
-### Macro
 
 ```
 #show Recklessness
@@ -265,13 +197,9 @@ Casts Berserker Stance if you are not in Berserker Stance. Otherwise, casts Reck
 /startattack
 ```
 
-# Shield Wall
-
-### Description
+### Shield Wall
 
 Casts Defensive Stance if you are not in Defensive Stance. Otherwise, casts Shield Wall.
-
-### Macro
 
 ```
 #show Shield Wall
@@ -279,13 +207,9 @@ Casts Defensive Stance if you are not in Defensive Stance. Otherwise, casts Shie
 /startattack
 ```
 
-# Retaliation
-
-### Description
+### Retaliation
 
 Casts Battle Stance if you are not in Battle Stance. Otherwise, casts Retaliation.
-
-### Macro
 
 ```
 #show Retaliation
@@ -293,39 +217,27 @@ Casts Battle Stance if you are not in Battle Stance. Otherwise, casts Retaliatio
 /startattack
 ```
 
-# Intercept
-
-### Description
+### Intercept
 
 Casts Berserker Stance if you are not in Berserker Stance. Otherwise, casts Intercept.
-
-### Macro
 
 ```
 #show Intercept
 /cast [nostance:3] Berserker Stance; Intercept
 ```
 
-# Berserker Rage
-
-### Description
+### Berserker Rage
 
 Casts Berserker Stance if you are not in Berserker Stance. Otherwise, casts Berserker Rage.
-
-### Macro
 
 ```
 #show Berserker Rage
 /cast [nostance:3] Berserker Stance; Berserker Rage
 ```
 
-# Whirlwind
-
-### Description
+### Whirlwind
 
 Casts Berserker Stance if you are not in Berserker Stance. Otherwise, casts Whirlwind.
-
-### Macro
 
 ```
 #show Whirlwind
@@ -333,13 +245,9 @@ Casts Berserker Stance if you are not in Berserker Stance. Otherwise, casts Whir
 /startattack
 ```
 
-# Sweeping Strikes
-
-### Description
+### Sweeping Strikes
 
 Casts Battle Stance if you are not in Battle Stance. Otherwise, casts Sweeping Strikes.
-
-### Macro
 
 ```
 #show Sweeping Strikes
