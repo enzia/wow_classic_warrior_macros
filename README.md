@@ -8,7 +8,7 @@
 - [Mouseover Intimidating Shout](###mouseover-intimidating-shout)
 - [Taunt](###taunt)
 - [Mocking Blow](###mocking-blow)
-- [Charge](###charge)
+- [Charge](#charge)
 - [Intercept](###intercept)
 - [Rend](###rend)
 - [Hamstring](###hamstring)
