@@ -95,7 +95,7 @@ Casts Pummel on the target or mouseover target if you are in Berserker Stance. I
 
 ### Mouseover Intimidating Shout
 
-Use your Intimidating Shout on your target or mouseover target. Prioritizes the mouseover target. Useful if there is a target close to your main target so you can catch your main target in a fear that will not break on damage.
+Use your Intimidating Shout on your target or mouseover target. Prioritizes the mouseover target. This is useful if there is a target close to your main target so you can catch your main target in a fear that will not break on damage. For example, you can mouseover a shaman totem near a shaman so the shaman is caught in a fear for 8 seconds and you can DPS them the whole time.
 
 ```
 #show Intimidating Shout
