@@ -14,7 +14,8 @@
 - [Hamstring](#hamstring)
 - [Disarm](#disarm)
 - [Execute](#execute)
-- [Overpower + Revenge](#overpower-+-revenge)
+- [Overpower](#overpower)
+- [Revenge](#revenge)
 - [Shield Block](#shield-block)
 - [Recklessness](#recklessness)
 - [Shield Wall](#shield-wall)
@@ -165,12 +166,24 @@ Casts Battle Stance if you are in Defensive Stance. Otherwise, casts Execute.
 /cast [stance:2] Battle Stance; Execute
 ```
 
-### Overpower + Revenge
+### Overpower
 
-Casts Overpower if you are in Battle Stance or Revenge if you are in Defensive Stance.
+Casts Battle Stance if you are not in Battle Stance. Otherwise, casts Overpower.
 
 ```
-/cast [stance:1] Overpower; [stance:2] Revenge
+#show Overpower
+/cast [nostance:1] Battle Stance; Overpower
+/startattack
+```
+
+### Revenge
+
+Casts Defensive Stance if you are not in Defensive Stance. Otherwise, casts Revenge.
+
+```
+#show Revenge
+/cast [nostance:2] Defensive Stance; Revenge
+/startattack
 ```
 
 ### Shield Block
